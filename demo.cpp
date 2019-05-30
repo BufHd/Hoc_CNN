@@ -7,26 +7,26 @@
 #include <Eigen/Dense>
 #include <algorithm>
 #include <iostream>
-#include<opencv2/core.hpp>
+#include <opencv2/core.hpp>
 #include <opencv2/core/eigen.hpp>
 #include <opencv2/highgui/highgui.hpp>
 
-#include "layer.h"
-#include "conv.h"
-#include "fully_connected.h"
-#include "ave_pooling.h"
-#include "max_pooling.h"
-#include "relu.h"
-#include "sigmoid.h"
-#include "softmax.h"
-#include "loss.h"
-//#include "mse_loss.h"
-#include "cross_entropy_loss.h"
-#include "mnist.h"
-#include "network.h"
-#include "optimizer.h"
-#include "sgd.h"
-#include "show_image.h"
+#include "src/layer.h"
+#include "src/layer/conv.h"
+#include "src/layer/fully_connected.h"
+#include "src/layer/ave_pooling.h"
+#include "src/layer/max_pooling.h"
+#include "src/layer/relu.h"
+#include "src/layer/sigmoid.h"
+#include "src/layer/softmax.h"
+#include "src/loss.h"
+#include "src/loss/mse_loss.h"
+#include "src/loss/cross_entropy_loss.h"
+#include "src/mnist.h"
+#include "src/network.h"
+#include "src/optimizer.h"
+#include "src/optimizer/sgd.h"
+#include "src/show_image.h"
 
 int main() {
 	// create window
