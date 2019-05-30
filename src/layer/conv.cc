@@ -13,8 +13,8 @@ void Conv::init() {
   grad_bias.resize(channel_out);
   set_normal_random(weight.data(), weight.size(), 0, 0.01);
   set_normal_random(bias.data(), bias.size(), 0, 0.01);
-  //std::cout << weight.colwise().sum() << std::endl;
-  //std::cout << weight.colwise().sum() + bias.transpose() << std::endl;
+  std::cout << weight.colwise().sum() << std::endl;
+  std::cout << weight.colwise().sum() + bias.transpose() << std::endl;
 }
 
 // im2col, used for bottom
